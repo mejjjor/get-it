@@ -7,6 +7,9 @@ export default async function handle(
   switch (req.method) {
     case "GET":
       const pictureFetch = await fetch(req.query.url as string);
+      const body = pictureFetch.body;
+
+      console.log("aaaaaaaaa: ", pictureFetch.url);
 
       return res
         .status(200)
@@ -14,7 +17,7 @@ export default async function handle(
           "Content-Type",
           pictureFetch.headers.get("Content-Type") ?? "application/octet-stream"
         )
-        .send(pictureFetch.body);
+        .send(body);
 
     default:
       throw new Error(
