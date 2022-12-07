@@ -1,13 +1,7 @@
-"use client";
-
 import React from "react";
-import type { NextPage } from "next";
 import Head from "next/head";
-import { useRouter } from "next/router";
 
-const Page: NextPage = () => {
-  // const router = useRouter();
-
+export default function Page() {
   return (
     <div className="p-2">
       <Head>
@@ -40,6 +34,4 @@ const Page: NextPage = () => {
       </div>
     </div>
   );
-};
-
-export default Page;
+}
