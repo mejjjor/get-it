@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import fetch from "got-fetch";
 
 export default async function handle(
   req: NextApiRequest,
@@ -8,8 +9,6 @@ export default async function handle(
     case "GET":
       const pictureFetch = await fetch(req.query.url as string);
       const body = pictureFetch.body;
-
-      console.log("aaaaaaaaa: ", pictureFetch.url);
 
       return res
         .status(200)
