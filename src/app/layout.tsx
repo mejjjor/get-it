@@ -8,7 +8,12 @@ export default function Layout({ children }: { children: any }) {
   return (
     <html lang="en">
       <head>
-        <title>Next.js</title>
+        <title>SIMPLE-URL-GETTER</title>
+        <meta name="description">A simple image getter over cors</meta>
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width"
+        />
       </head>
       <body className={myFont.className}>
         <div className="fixed h-screen w-screen overflow-hidden -z-50">

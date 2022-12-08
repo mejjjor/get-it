@@ -1,18 +1,14 @@
 import React from "react";
-import Head from "next/head";
 
 export default function Page() {
   return (
     <div className="p-2">
-      <Head>
-        <title>SIMPLE-URL-GETTER</title>
-      </Head>
       <div>
         <div>
-          <h1 className="text-amber-500 p-10 text-center text-6xl font-bold">
+          <h1 className="text-amber-400 p-10 text-center text-6xl font-bold">
             SIMPLE URL GETTER
           </h1>
-          <h2 className="text-amber-600 text-center text-4xl pb-10">
+          <h2 className="text-amber-500 text-center text-4xl pb-10">
             avoid browser cors
           </h2>
           <form
@@ -26,7 +22,10 @@ export default function Page() {
               name="url"
               placeholder="https://www.random-site.com/picture.jpg"
             />
-            <button type="submit" className="bg-amber-700 p-2 rounded-md mt-2 ">
+            <button
+              type="submit"
+              className="bg-amber-600 p-2 rounded-md mt-2 hover:bg-amber-500 "
+            >
               GET IT
             </button>
           </form>
