@@ -31,6 +31,9 @@ export default async function handle(
 
   switch (req.method) {
     case "GET":
+      if (req.query.key !== process.env.QUERY_KEY) {
+        return res.status(200).send({ msg: "API is closed, sorry" });
+      }
       const pictureFetch = await fetch(req.query.url as string);
       const body = pictureFetch.body;
 
