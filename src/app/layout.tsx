@@ -2,6 +2,7 @@ import background from "/public/background.jpg";
 import Image from "next/image";
 import "~/styles/globals.css";
 import localFont from "@next/font/local";
+import { AnalyticsWrapper } from "./components/analytics";
 const myFont = localFont({ src: "../styles/Speedy.ttf" });
 
 export default function Layout({ children }: { children: any }) {
@@ -30,6 +31,7 @@ export default function Layout({ children }: { children: any }) {
           />
         </div>
         <div>{children}</div>
+        <AnalyticsWrapper />
       </body>
     </html>
   );
