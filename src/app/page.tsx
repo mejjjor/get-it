@@ -11,24 +11,6 @@ export default function Page() {
           <h2 className="text-amber-500 text-center text-4xl pb-10">
             avoid browser cors
           </h2>
-          <form
-            action="/api/get-it"
-            method="GET"
-            className="flex flex-col justify-center md:w-[50%] m-auto"
-          >
-            <input
-              className="h-14 rounded-md pl-6"
-              type="text"
-              name="url"
-              placeholder="https://www.random-site.com/picture.jpg"
-            />
-            <button
-              type="submit"
-              className="bg-amber-600 p-2 rounded-md mt-2 hover:bg-amber-500 "
-            >
-              GET IT
-            </button>
-          </form>
         </div>
       </div>
     </div>
